@@ -1,5 +1,6 @@
 const teste = {
-  images: "../../../images/planetas/tatooine.jpeg"
+  images: "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/tatooine.jpeg",
+  
 }
 console.log(teste)
 const divPreencher = document.getElementById("preencher");
