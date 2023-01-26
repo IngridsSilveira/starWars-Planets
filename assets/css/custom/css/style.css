@@ -48,6 +48,10 @@
   font-size: 1.4rem;
   margin-bottom: 5px;
 }
+.main .preencher .novoElemento .p_clima {
+  font-weight: normal;
+}
+
 .footer {
   font-size: 1.2rem;
   flex-direction: column-reverse;

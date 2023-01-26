@@ -1,11 +1,17 @@
 const teste = [
   "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/tatooine.jpeg",
   "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/alderann.webp",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/yavin.jpeg",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/hoth.jpeg",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/dagobah.jpeg",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/bespin.webp",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/endor.jpeg",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/naboo.jpeg",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/Coruscant.jpg",
+  "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/kamino.webp"
 ];
 const imagens = teste;
-imagens.map((elemento) => {
-  console.log(elemento);
-});
+
 const divPreencher = document.getElementById("preencher");
 
 const criandoElementos = (name, climate, image) => {
@@ -36,7 +42,8 @@ const funcaoAssincrona = async (url) => {
   const capturandoItens = jsonBody.results;
   capturandoItens.map((elemento) => {
     const { name, climate } = elemento;
-    criandoElementos(name, climate, teste);
+    criandoElementos(name, climate, imagens);
   });
 };
+
 funcaoAssincrona("https://swapi.dev/api/planets/");
