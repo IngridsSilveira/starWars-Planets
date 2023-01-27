@@ -16,6 +16,7 @@
 .header {
   padding: 10px;
   font-size: 1.8rem;
+  font-family: "Aboreto", cursive;
 }
 .header a {
   color: #fff;
@@ -28,28 +29,37 @@
 
 .main {
   width: 100%;
-  height: auto;
+  height: 90vh;
 }
 .main .preencher {
-  background-color: rgba(0, 0, 0, 0.221);
   flex-wrap: wrap;
   width: 50%;
   height: 500px;
 }
 .main .preencher div {
-  width: 250px;
+  width: 300px;
+  height: 200px;
   margin: 5px;
-  background-color: #fff;
-  color: #000;
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.068);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 1px 1px 1px #fff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.main .preencher div:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 .main .preencher div .p_planeta {
+  font-family: "Unbounded", cursive;
   font-weight: bold;
   font-size: 1.4rem;
   margin-bottom: 5px;
 }
 .main .preencher div .p_clima {
-  font-weight: normal;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
 }
 .main .preencher .Tatooine::after {
   content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/tatooine.jpeg");
@@ -105,8 +115,9 @@
 .footer {
   font-size: 1.2rem;
   flex-direction: column-reverse;
+  align-items: flex-end;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
 }
 .footer a {
   color: #fff;

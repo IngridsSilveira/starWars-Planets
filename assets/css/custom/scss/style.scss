@@ -6,6 +6,10 @@
     font-size: 1.5rem;
   }
 }
+@mixin after {
+  display: flex;
+  height: 100px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,90 +26,91 @@
 .header {
   padding: 10px;
   font-size: 1.8rem;
+  font-family: "Aboreto", cursive;
   a {
     @include links;
   }
 }
 .main {
   width: 100%;
-  height: auto;
+  height: 90vh;
   .preencher {
-    background-color: rgba(0, 0, 0, 0.221);
     flex-wrap: wrap;
     width: 50%;
     height: 500px;
     div {
-      width: 250px;
+      width: 300px;
+      height: 200px;
       margin: 5px;
-      background-color: #fff;
-      color: #000;
-      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.068);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      box-shadow: 1px 1px 1px #fff;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      &:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+      }
       .p_planeta {
+        font-family: "Unbounded", cursive;
         font-weight: bold;
         font-size: 1.4rem;
         margin-bottom: 5px;
       }
       .p_clima {
-        font-weight: normal;
+        font-family: "Courier New", Courier, monospace;
+        margin-bottom: 10px;
       }
     }
     .Tatooine::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/tatooine.jpeg");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Alderaan::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/alderann.webp");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Yavin::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/yavin.jpeg");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Hoth::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/hoth.jpeg");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Dagobah::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/dagobah.jpeg");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Bespin::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/bespin.webp");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Endor::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/endor.jpeg");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Naboo::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/naboo.jpeg");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Coruscant::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/Coruscant.jpg");
-      display: flex;
-      height: 100px;
+      @include after;
     }
     .Kamino::after {
       content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/kamino.webp");
-      display: flex;
-      height: 100px;
+      @include after;
     }
   }
 }
 .footer {
   font-size: 1.2rem;
   flex-direction: column-reverse;
+  align-items: flex-end;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   a {
     @include links;
   }
