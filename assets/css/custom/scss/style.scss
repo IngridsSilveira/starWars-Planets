@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     width: 50%;
     height: 500px;
-    .novoElemento {
+    div {
       width: 250px;
       margin: 5px;
       background-color: #fff;
@@ -48,6 +48,56 @@
       .p_clima {
         font-weight: normal;
       }
+    }
+    .Tatooine::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/tatooine.jpeg");
+      display: flex;
+      height: 100px;
+    }
+    .Alderaan::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/alderann.webp");
+      display: flex;
+      height: 100px;
+    }
+    .Yavin::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/yavin.jpeg");
+      display: flex;
+      height: 100px;
+    }
+    .Hoth::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/hoth.jpeg");
+      display: flex;
+      height: 100px;
+    }
+    .Dagobah::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/dagobah.jpeg");
+      display: flex;
+      height: 100px;
+    }
+    .Bespin::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/bespin.webp");
+      display: flex;
+      height: 100px;
+    }
+    .Endor::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/endor.jpeg");
+      display: flex;
+      height: 100px;
+    }
+    .Naboo::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/naboo.jpeg");
+      display: flex;
+      height: 100px;
+    }
+    .Coruscant::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/Coruscant.jpg");
+      display: flex;
+      height: 100px;
+    }
+    .Kamino::after {
+      content: url("https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/kamino.webp");
+      display: flex;
+      height: 100px;
     }
   }
 }

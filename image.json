@@ -1,0 +1,44 @@
+{
+    "planetas": [
+        {
+            "nome": "tatooine",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/tatooine.jpeg"
+        },
+        {
+            "nome": "alderann",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/alderann.webp"
+        },
+        {
+            "nome": "yavin",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/yavin.jpeg"
+        },
+        {
+            "nome": "hoth",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/hoth.jpeg"
+        },
+        {
+            "nome": "dagobah",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/dagobah.jpeg"
+        },
+        {
+            "nome": "bespin",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/bespin.webp"
+        },
+        {
+            "nome": "endor",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/endor.jpeg"
+        },
+        {
+            "nome": "naboo",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/naboo.jpeg"
+        },
+        {
+            "nome": "coruscant",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/Coruscant.jpg"
+        },
+        {
+            "nome": "kamino",
+            "image": "https://raw.githubusercontent.com/IngridsSilveira/starWars-Planets/main/assets/images/planetas/kamino.webp"
+        }
+    ]
+}
