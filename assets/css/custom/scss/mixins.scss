@@ -1,0 +1,12 @@
+@mixin links {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #fe0137;
+      font-size: 1.5rem;
+    }
+  }
+  @mixin after {
+    display: flex;
+    height: 100px;
+  }
