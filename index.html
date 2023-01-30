@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,14 @@
     <title>Star Wars</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Unbounded:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/libs/reset.css">
     <link rel="stylesheet" href="assets/css/custom/css/style.css">
 </head>
+
 <body class="bg container-fluid d-flex align-items-center justify-content-between">
     <div class="bg-dark-bg">
         <header class="container-fluid d-flex align-items-center justify-content-between header">
@@ -22,11 +25,27 @@
         </header>
         <main class="container-fluid main d-flex">
             <div id="preencher" class="d-flex align-items-center preencher">
+                <div class="pesquisa d-flex align-items-center justify-content-center">
+                    <h1 class="title_pesquisa">Star Wars - Plantes</h1>
+                    <input type="text" id="input" class="form-control">
+                    <button class="btn btn-danger mt-3" id="btn" type="button">Pesquisar</button>
+                </div>
+                <div id="novoElemento" class="novoElemento">
+                    <p id="p_planeta" class="p_planeta"></p>
+                    <p id="p_clima" class="p_clima"></p>
+                    <p id="p_terreno" class="p_terreno"></p>
+                    <p id="p_population" class="p_population"></p>
+                </div>
+            </div>
+            <div class="ms-5 d-flex lista">
+                <p class="lista">Veja aqui a lista de todos os <span id="lista">Planetas</span></p>
+                <div class="invisivel d-flex" id="invisivel">
+                </div>
             </div>
         </main>
         <footer class="footer container-fluid d-flex">
-                <p class="mt-2">Feito por <a target="_blank" href="ttps://github.com/IngridsSilveira">Dev_Ingrid 🔥</a>
-                </p>
+            <p class="mt-2">Feito por <a target="_blank" href="ttps://github.com/IngridsSilveira">Dev_Ingrid 🔥</a>
+            </p>
             <div class="footer_area">
                 <a class="icons_first me-2" target="_blank" href="https://www.linkedin.com/in/ingridssilveira/"><i
                         class="bi bi-linkedin"></i></a>
@@ -42,4 +61,5 @@
     </div>
     <script src="assets/js/custom/main.js"></script>
 </body>
+
 </html>

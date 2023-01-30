@@ -1,13 +1,17 @@
 const divPreencher = document.getElementById("preencher");
+const input = document.getElementById("input");
+const btn = document.getElementById("btn");
+const lista = document.getElementById("lista")
+const array = [];
 
 const criandoElementos = (name, climate, terrain, population) => {
-  const novoElemento = document.createElement("div");
-  const p_planeta = document.createElement("p");
-  const p_clima = document.createElement("p");
-  const p_terreno = document.createElement("p");
-  const p_population = document.createElement("p");
+  const novoElemento = document.getElementById("novoElemento");
+  const p_planeta = document.getElementById("p_planeta");
+  const p_clima = document.getElementById("p_clima");
+  const p_terreno = document.getElementById("p_terreno");
+  const p_population = document.getElementById("p_population");
 
-  novoElemento.setAttribute("class", `${name}`)
+  novoElemento.setAttribute("class", `${name}`);
   p_planeta.setAttribute("class", "title_planeta");
   p_clima.setAttribute("class", "p_padrao");
   p_terreno.setAttribute("class", "p_padrao");
@@ -17,22 +21,41 @@ const criandoElementos = (name, climate, terrain, population) => {
   p_clima.innerHTML = "Clima: " + climate;
   p_terreno.innerHTML = "Terreno: " + terrain;
   p_population.innerHTML = "População: " + population;
+};
 
-  divPreencher.appendChild(novoElemento)
-  novoElemento.appendChild(p_planeta);
-  novoElemento.appendChild(p_clima);
-  novoElemento.appendChild(p_terreno);
-  novoElemento.appendChild(p_population);
+const limpa = () => {
+  criandoElementos();
 };
 
 const funcaoAssincrona = async (url) => {
   const resposta = await fetch(url);
   const jsonBody = await resposta.json();
   const capturandoItens = jsonBody.results;
-  capturandoItens.map((elemento) => {
-    const { name, climate, terrain, population } = elemento;
-    criandoElementos(name, climate, terrain, population)
-  })
+
+  capturandoItens.filter((elemento) => {
+    const { name } = elemento;
+    array.push(name);
+  });
+
+  btn.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    const item = input.value;
+    if (array.indexOf(item) > -1) {
+      capturandoItens.map((el) => {
+        const { name, climate, terrain, population } = el;
+        criandoElementos(item, climate, terrain, population);
+      });
+    } else {
+      limpa();
+    }
+  });
 };
+
+lista.addEventListener("click", () => {
+  array.map((elemento) => {
+    console.log(elemento)
+    document.getElementById("invisivel").innerHTML += elemento
+  })
+})
 
 funcaoAssincrona("https://swapi.dev/api/planets/");
