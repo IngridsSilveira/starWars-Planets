@@ -44,8 +44,8 @@ const funcaoAssincrona = async (url) => {
     if (array.indexOf(item) > -1) {
       capturandoItens.map((el) => {
         const { name, climate, terrain, population } = el;
-        criandoElementos(item, climate, terrain, population);
         document.getElementById("novoElemento").style.display = "block"
+        criandoElementos(item, climate, terrain, population);
       });
     } else {
       limpa();
