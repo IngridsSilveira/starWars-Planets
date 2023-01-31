@@ -35,10 +35,10 @@
   width: 100%;
   height: 88vh;
   flex-direction: column;
+  position: relative;
 }
 .main .preencher {
   width: 100%;
-  height: 500px;
 }
 .main .preencher div {
   width: 320px;
@@ -71,6 +71,9 @@
   font-size: 1.5rem;
   width: 300px;
   margin-bottom: 10px;
+}
+.main .preencher #novoElemento {
+  display: none;
 }
 .main .preencher #novoElemento:hover {
   transform: scale(0.9);
@@ -131,23 +134,14 @@
   flex-direction: column;
   font-family: "Unbounded", cursive;
 }
-.main .lista span {
+.main .lista a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
-.main .lista span:hover {
+.main .lista a:hover {
   color: #fe0137;
   font-size: 1.5rem;
-}
-.main .lista .invisivel {
-  position: absolute;
-  top: 450px;
-  left: 900px;
-  background-color: chocolate;
-  width: 150px;
-  padding: 10px;
-  height: auto;
 }
 
 .footer {
@@ -164,6 +158,26 @@
 .footer a:hover {
   color: #fe0137;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .bg-dark-bg {
+    height: 100vh;
+  }
+  .main {
+    height: 85vh;
+  }
+  .preencher {
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: flex-start !important;
+  }
+  .preencher .pesquisa {
+    margin-right: 0;
+  }
+  .ms-4 {
+    margin-left: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

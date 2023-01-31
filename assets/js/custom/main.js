@@ -1,7 +1,6 @@
 const divPreencher = document.getElementById("preencher");
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
-const lista = document.getElementById("lista")
 const array = [];
 
 const criandoElementos = (name, climate, terrain, population) => {
@@ -24,7 +23,9 @@ const criandoElementos = (name, climate, terrain, population) => {
 };
 
 const limpa = () => {
-  criandoElementos();
+  alert("Planeta não encontrado")
+  document.getElementById("novoElemento").style.display = "none"
+  // criandoElementos();
 };
 
 const funcaoAssincrona = async (url) => {
@@ -44,18 +45,12 @@ const funcaoAssincrona = async (url) => {
       capturandoItens.map((el) => {
         const { name, climate, terrain, population } = el;
         criandoElementos(item, climate, terrain, population);
+        document.getElementById("novoElemento").style.display = "block"
       });
     } else {
       limpa();
     }
   });
 };
-
-lista.addEventListener("click", () => {
-  array.map((elemento) => {
-    console.log(elemento)
-    document.getElementById("invisivel").innerHTML += elemento
-  })
-})
 
 funcaoAssincrona("https://swapi.dev/api/planets/");
