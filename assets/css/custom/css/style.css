@@ -164,9 +164,6 @@
   .bg-dark-bg {
     height: 100vh;
   }
-  .main {
-    height: 85vh;
-  }
   .preencher {
     flex-direction: column;
     margin: 20px 0;

@@ -23,9 +23,8 @@ const criandoElementos = (name, climate, terrain, population) => {
 };
 
 const limpa = () => {
-  alert("Planeta não encontrado")
   document.getElementById("novoElemento").style.display = "none"
-  // criandoElementos();
+  alert("Planeta não encontrado")
 };
 
 const funcaoAssincrona = async (url) => {
@@ -41,7 +40,10 @@ const funcaoAssincrona = async (url) => {
   btn.addEventListener("click", (evt) => {
     evt.preventDefault();
     const item = input.value;
-    if (array.indexOf(item) > -1) {
+    
+    if(item == ""){
+      alert("Digite alguma coisa")
+    } else if (array.indexOf(item) > -1) {
       capturandoItens.map((el) => {
         const { name, climate, terrain, population } = el;
         document.getElementById("novoElemento").style.display = "block"
