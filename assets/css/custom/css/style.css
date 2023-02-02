@@ -161,16 +161,17 @@
 }
 
 @media screen and (max-width: 767px) {
-  .bg-dark-bg {
-    height: 100vh;
+  .bg {
+    height: auto;
   }
-  .preencher {
+  .main .preencher {
     flex-direction: column;
     margin: 20px 0;
     align-items: flex-start !important;
   }
-  .preencher .pesquisa {
+  .main .preencher .pesquisa {
     margin-right: 0;
+    height: 200px;
   }
   .ms-4 {
     margin-left: 0 !important;
