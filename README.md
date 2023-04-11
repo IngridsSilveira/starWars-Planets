@@ -1,6 +1,7 @@
 # Star Wars Planets
  Consumindo API do Star Wars, SWAPI, e capturando as informações sobre planetas que existem no universo de Star Wars.
 
+Site da API: <a href="https://swapi.dev">SWAPI</a>
  <ul>
     <li>Nome dos planetas</li>
     <li>Clima</li>
